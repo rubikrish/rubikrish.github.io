@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json"/>
+    <style>
+        .active{
+          font-weight:bold; 
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark indigo">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+
+        </ul>
+        <!-- Links -->
+
+        <form class="form-inline">
+            <div class="md-form mt-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+        </form>
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-2" data-slide-to="1"></li>
+        <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="view">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+                <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+                <h3 class="h3-responsive">Light mask</h3>
+                <p>First text</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+                <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="carousel-caption">
+                <h3 class="h3-responsive">Strong mask</h3>
+                <p>Secondary text</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
+                <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption">
+                <h3 class="h3-responsive">Slight mask</h3>
+                <p>Third text</p>
+            </div>
+        </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <!--Card group-->
+<div class="card-group">
+
+    <!--Card-->
+    <div class="card mb-4">
+
+        <!--Card image-->
+        <div class="view overlay">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Card image cap">
+            <button type="button" class="btn btn-success px-3"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+            <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+        </div>
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body">
+
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md">Read more</button>
+        </div>
+        <!--Card content-->
+
+    </div>
+    <!--Card-->
+
+    <!--Card-->
+    <div class="card mb-4">
+
+        <!--Card image-->
+        <div class="view overlay">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" alt="Card image cap">
+            <button type="button" class="btn btn-success px-3"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+            <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+        </div>
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body">
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md">Read more</button>
+        </div>
+        <!--Card content-->
+
+    </div>
+    <!--Card-->
+
+    <!--Card-->
+    <div class="card mb-4">
+
+        <!--Card image-->
+        <div class="view overlay">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" alt="Card image cap">
+            <button type="button" class="btn btn-success px-3"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+            <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+        </div>
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body">
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md">Read more</button>
+        </div>
+        <!--Card content-->
+
+    </div>
+    <!--Card-->
+
+</div>
+<!--Card group-->
+    </div>
+    <div class="row mt-5">
+        <!-- Nav tabs -->
+<div class="tabs-wrapper"> 
+    <ul class="nav classic-tabs tabs-cyan  #c5e1a5 light-green lighten-3" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link waves-light active" data-toggle="tab" href="#panel51" role="tab">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link waves-light" data-toggle="tab" href="#panel52" role="tab">Follow</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link waves-light" data-toggle="tab" href="#panel53" role="tab">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link waves-light" data-toggle="tab" href="#panel54" role="tab">Be awesome</a>
+        </li>
+    </ul>
+</div>
+
+<!-- Tab panels -->
+<div class="tab-content card">
+
+    <!--Panel 1-->
+    <div class="tab-pane fade in show active" id="panel51" role="tabpanel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+    </div>
+    <!--/.Panel 1-->
+
+    <!--Panel 2-->
+    <div class="tab-pane fade" id="panel52" role="tabpanel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+    </div>
+    <!--/.Panel 2-->
+
+    <!--Panel 3-->
+    <div class="tab-pane fade" id="panel53" role="tabpanel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+    </div>
+    <!--/.Panel 3-->
+
+    <!--Panel 4-->
+    <div class="tab-pane fade" id="panel54" role="tabpanel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+    </div>
+    <!--/.Panel 4-->
+
+</div>
+    </div>
+        <div class="row mt-5 ml-5">
+                <div class="column #42a5f5 blue lighten-5 rounded mr-5">
+            
+
+<!-- Material form login -->
+<form>
+        <p class="h4 text-center mb-4">Sign in</p>
+    
+        <!-- Material input email -->
+        <div class="md-form">
+            <i class="fa fa-envelope prefix grey-text"></i>
+            <input type="email" id="materialFormLoginEmailEx" class="form-control">
+            <label for="materialFormLoginEmailEx">Your email</label>
+        </div>
+    
+        <!-- Material input password -->
+        <div class="md-form">
+            <i class="fa fa-lock prefix grey-text"></i>
+            <input type="password" id="materialFormLoginPasswordEx" class="form-control">
+            <label for="materialFormLoginPasswordEx">Your password</label>
+        </div>
+    
+        <div class="text-center mt-4">
+            <button class="btn btn-default" type="submit">Login</button>
+        </div>
+    </form>
+    <!-- Material form login -->
+                          
+                      
+        </div>
+        <div class="column #42a5f5 blue lighten-5 rounded">
+            
+<!-- Material form register -->
+<form>
+        <p class="h4 text-center mb-4">Sign up</p>
+    
+        <!-- Material input text -->
+        <div class="md-form">
+            <i class="fa fa-user prefix grey-text"></i>
+            <input type="text" id="materialFormRegisterNameEx" class="form-control">
+            <label for="materialFormRegisterNameEx">Your name</label>
+        </div>
+    
+        <!-- Material input email -->
+        <div class="md-form">
+            <i class="fa fa-envelope prefix grey-text"></i>
+            <input type="email" id="materialFormRegisterEmailEx" class="form-control">
+            <label for="materialFormRegisterEmailEx">Your email</label>
+        </div>
+    
+        <!-- Material input email -->
+        <div class="md-form">
+            <i class="fa fa-exclamation-triangle prefix grey-text"></i>
+            <input type="email" id="materialFormRegisterConfirmEx" class="form-control">
+            <label for="materialFormRegisterConfirmEx">Confirm your email</label>
+        </div>
+    
+        <!-- Material input password -->
+        <div class="md-form">
+            <i class="fa fa-lock prefix grey-text"></i>
+            <input type="password" id="materialFormRegisterPasswordEx" class="form-control">
+            <label for="materialFormRegisterPasswordEx">Your password</label>
+        </div>
+    
+        <div class="text-center mt-4">
+            <button class="btn btn-primary" type="submit">Register</button>
+        </div>
+    </form>
+    <!-- Material form register -->
+                          
+        </div>
+        </div>
+</div>
+             
+
+<!--Footer-->
+<footer class="page-footer font-small indigo pt-0">
+
+    <!--Footer Links-->
+    <div class="container">
+
+        <!--First row-->
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-12 py-5">
+
+                <div class="mb-5 flex-center">
+
+                    <!--Facebook-->
+                    <a class="fb-ic">
+                        <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Twitter-->
+                    <a class="tw-ic">
+                        <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Google +-->
+                    <a class="gplus-ic">
+                        <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Linkedin-->
+                    <a class="li-ic">
+                        <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Pinterest-->
+                    <a class="pin-ic">
+                        <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
+                    </a>
+                </div>
+            </div>
+            <!--/First column-->
+        </div>
+        <!--/First row-->
+    </div>
+    <!--/Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> MDBootstrap.com </a>
+    </div>
+    <!--/Copyright-->
+
+</footer>
+<!--/Footer-->
+                      
+                             
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
